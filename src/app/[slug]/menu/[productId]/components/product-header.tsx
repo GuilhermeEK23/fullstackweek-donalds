@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Product } from "@prisma/client";
 import { ChevronLeftIcon, ScrollTextIcon } from "lucide-react";
@@ -16,10 +16,10 @@ const ProductHeader = ({ product }: ProductHeaderProps) => {
 
   const handleBackClick = () => {
     router.back();
-  }
+  };
 
   return (
-    <div className="relative w-ful h-[300px]">
+    <div className="w-ful relative h-[300px]">
       <Button
         variant="secondary"
         size="icon"
@@ -43,6 +43,6 @@ const ProductHeader = ({ product }: ProductHeaderProps) => {
       </Button>
     </div>
   );
-}
+};
 
 export default ProductHeader;
