@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 interface ConsumptionMethodOptionProps {
   slug: string;
-  imageSrc: string;
+  imageUrl: string;
   imageAlt: string;
   buttonText: string;
   option: ConsumptionMethod;
@@ -15,7 +15,7 @@ interface ConsumptionMethodOptionProps {
 
 const ConsumptionMethodOption = ({
   slug,
-  imageSrc,
+  imageUrl,
   imageAlt,
   buttonText,
   option,
@@ -25,7 +25,7 @@ const ConsumptionMethodOption = ({
       <CardContent className="flex flex-col items-center gap-8 py-8">
         <div className="relative h-[80px] w-[80px]">
           <Image
-            src={imageSrc}
+            src={imageUrl}
             fill
             alt={imageAlt}
             className="object-contain"
