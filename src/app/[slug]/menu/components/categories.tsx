@@ -45,7 +45,9 @@ const RestaurantCategories = ({ restaurant }: RestaurantCategoriesProps) => {
   };
 
   return (
-    <div className="relative z-50 mt-[-1.5rem] rounded-t-3xl bg-white">
+    <div
+      className={`relative z-50 mt-[-1.5rem] rounded-t-3xl bg-white ${totalQuantity > 0 ? "pb-16" : "pb-2"}`}
+    >
       <div className="border p-5">
         <div className="flex items-center gap-3">
           <Image
